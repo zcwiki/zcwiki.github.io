@@ -1,0 +1,998 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>终成博客 - 终成博客</title><meta name="author" content="终成"><meta name="copyright" content="终成"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="终成博客"><meta name="application-name" content="终成博客"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="website">
+<meta property="og:title" content="终成博客">
+<meta property="og:url" content="https://blog.zceee.com/index.html">
+<meta property="og:site_name" content="终成博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.zceee.com/img/t/hexo/logo.png">
+<meta property="article:author" content="终成">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.zceee.com/img/t/hexo/logo.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://blog.zceee.com/"><link rel="preconnect" href="//npm.elemecdn.com"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  friends_vue_info: undefined,
+  navMusic: true,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '终成博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-10 07:56:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button" tabindex="-1"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.zceee.com/" title="博客" target="_blank"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/logo.png" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://nic.zz.tn/" title="DNS" target="_blank"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/dns.png" alt="DNS"/><span class="back-menu-item-text">DNS</span></a><a class="back-menu-item" href="https://zz.tn/" title="短链服务" target="_blank"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/dns.png" alt="短链服务"/><span class="back-menu-item-text">短链服务</span></a></div></div></div></div><a id="site-name" href="/"><div class="title">终成博客</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="anzhiyu.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><div class="bbTimeList container" id="bbTimeList"><i class="anzhiyufont anzhiyu-icon-jike bber-logo fontbold" onclick="pjax.loadUrl(&quot;/essay/&quot;)" title="即刻短文" aria-hidden="true"></i><div class="swiper-container swiper-no-swiping essay_bar_swiper_container" id="bbtalk" tabindex="-1"><div class="swiper-wrapper" id="bber-talk" onclick="pjax.loadUrl(&quot;/essay/&quot;)"><div class="li-style swiper-slide">搞了一个二级域名分发系统 [图片]</div><div class="li-style swiper-slide">今天上午博客备案终于通过了，足足两个星期。目前博客已经迁回国内服务器</div><div class="li-style swiper-slide">520来了，日常发个说说 [图片]</div><div class="li-style swiper-slide">有一种关爱无微不至，有一种情感真诚无私，有一种形象堪比天使，有一种守望执着坚持，那就是母亲!母亲节到了，妈妈:节日快乐! [图片]</div></div></div><i class="bber-gotobb anzhiyufont anzhiyu-icon-circle-arrow-right" onclick="pjax.loadUrl(&quot;/essay/&quot;)" title="查看全文"></i></div><script src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" onload="this.media='all'"><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div id="categoryBar"><div class="category-bar" id="category-bar"><div id="catalog-bar"><div id="catalog-list"><div class="catalog-list-item" id="首页"><a href="/">首页</a></div>
+    <div class="catalog-list-item" id="/categories/生活/">
+      <a href="/categories/生活/">
+        生活
+      </a>
+    </div>
+    
+    <div class="catalog-list-item" id="/categories/涨知识/">
+      <a href="/categories/涨知识/">
+        涨知识
+      </a>
+    </div>
+    
+    <div class="catalog-list-item" id="/categories/随记/">
+      <a href="/categories/随记/">
+        随记
+      </a>
+    </div>
+    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></div><div class="post_cover left"><a href="/2023/03/01/1/" title="关于我和博客"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/1/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于我和博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/01/1/" title="关于我和博客">关于我和博客</a><div class="article-meta-wrap"><span class="article-meta"><i class="anzhiyufont anzhiyu-icon-thumbtack sticky"></i><span class="sticky">置顶</span></span><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-01T02:39:00.000Z" title="发表于 2023-03-01 10:39:00">2023-03-01</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%85%B3%E4%BA%8E%E6%88%91/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>关于我</span></a></span></div><div class="content">个人信息姓名：自己查性别：男年龄：反正是00后现居：江苏Email：emNAemMud2lraQ&#x3D;&#x3D;【Base64】动态博客：blog.zceee.com
+曾经的博客这是我的个人博客站点，上一次做个人博客大概是在2020年，那时候是因为疫情的原因，所以有时间去搞自己想做的东西。那时候的博客好像也搞了很长时间，还记得那时用的是zblog程序，博客可以联动百度的熊掌号，文章自动同步，并且可以在博客里面引流到熊掌号(现在应该叫百家号了，在网站中添加banner的功能好像也没了)。但是后来，可能是服务器到期了吧，因为买的是轻量服务器，享受学生优惠，但是一般这种活动只有新用户才有，所以在服务器到期之后，也没有去选择新购，也想过用一些个人IDC厂商的，但是也担心数据安全之类的，也没有继续下去，可惜没有保留当时的数据。当时域名到期之后，也没有续费，所以上一个博客，就这么没了。
+能存活多久？直到现在，我又把博客弄起来了，至于这个博客能存活多久，应该会有很长时间，因为这个是完全静态化部署在gitee上面的。
+博客内容目前博客可能会发点我折腾东西的内容，生活记录也有，可能不是很多，但也 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></div><div class="post_cover left"><a href="/2023/07/01/29/" title="7月初记"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/29/4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="7月初记"></a></div><div class="recent-post-info"><span class="newPost">最新文章</span><a class="article-title" href="/2023/07/01/29/" title="7月初记">7月初记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-01T00:54:00.000Z" title="发表于 2023-07-01 08:54:00">2023-07-01</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>中国广电</span></a><a class="article-meta__tags" href="/tags/%E4%B8%87%E4%BA%8B%E8%BE%BE/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>万事达</span></a><a class="article-meta__tags" href="/tags/%E4%BF%A1%E7%94%A8%E5%8D%A1/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>信用卡</span></a></span></div><div class="content">7月了，今年已经过去了一半。今天是建党102周年，祝愿党的光辉万年长。
+今天的第一件事，就是看一下我的广电双百套餐有没有生效，确实目前套餐已经改成了双百套餐，同时我使用speedtest测速了一下，我目前居住的是在江苏的一个三线城市，测速的结果对我来说还可以吧，毕竟我平时也不玩游戏，对这个网络延迟方面没有太大要求，有的人说广电信号好，有的人说不好，对我来说，29一个月有100G流量就已经足够了。因为看Google Domains注册和续费域名的价格基本上是国内注册商的一半，所以趁着昨天星期五，我想把我的万事达卡激活一下，因为Google不支持银联卡支付，所以昨天打车去了银行。
+到银行才发现，卡是激活状态，不过长期未使用，需要转款进去。银行工作人员让我转5块钱进去试试，但是我之前转过，好像不太行，给他们也整不会了，因为很少有万事达、VISA卡客户，接触的基本上是银联卡。
+后来研究了一下，才发现我的卡仅支持外币，不能转入人民币，所以需要先兑换一下外币，再把外币转入。于是我兑换了3刀，确实是成功转进去的。
+这两张中行的卡差不多是同时申请的，银联的卡是我日常使用的，万事达卡基本上不用。虽然我不 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></div><div class="post_cover left"><a href="/2023/06/24/28/" title="记一次中国广电修改套餐"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/28/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记一次中国广电修改套餐"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/24/28/" title="记一次中国广电修改套餐">记一次中国广电修改套餐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-24T11:25:00.000Z" title="发表于 2023-06-24 19:25:00">2023-06-24</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>中国广电</span></a></span></div><div class="content">很多人都知道三大运营商，移动、联通和电信。但是在去年6月，又一大运营商，中国广电开始放号了，目前只有192号段。
+虽然广电是在6月放号的，但我真正了解的时候还是在9月，我很早就预约了广电，不知道为啥在放号后3个月才收到短信，于是在9月份，我有了第一张广电号卡。在入网登记之后，没过多久快递小哥就上门激活号卡了，因为我是把广电号卡当成备用卡使用，所以开通的是最低资费38元的精彩套餐【我以为的最低资费】但是没过多久，我就将这张卡停机保号了。为什么会选择停机保号，因为广电号段有点尴尬，你可以在百度搜索如下关键词“192诈骗”，就会出现很多新闻也不知道为什么他们热衷于使用“192”号段去诈骗，但是这些新闻出来之后，我都不敢用广电卡联系家人了，生怕他们给我拉黑，而且38元的精彩套餐，只有10G流量，基本上没用，所以在去年12月，我决定停机保号。停机保号的费用是5元&#x2F;月，反正我也用不到这张卡，不如停机，至于为什么不注销，而是选择保号，那必然是我还是喜欢我这个号码的。自从停机保号之后，在卡里充值了50元，作为每月的保号费，然后就扔在家里了。直到最近，我在其他平台看到有网友说广电小程序可以办理 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></div><div class="post_cover left"><a href="/2023/06/23/27/" title="激活学生信用卡额度"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/27/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="激活学生信用卡额度"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/23/27/" title="激活学生信用卡额度">激活学生信用卡额度</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-22T22:54:00.000Z" title="发表于 2023-06-23 06:54:00">2023-06-23</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%BF%A1%E7%94%A8%E5%8D%A1/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>信用卡</span></a></span></div><div class="content">记得在大一的时候，某一天晚上大概7点多，宿舍楼来了一些银行的推销人员，主推的是学生信用卡。在好奇心的驱使下，我成功被办理了一张。
+当时办理这种信用卡，是因为那推销的说，现在办理信用卡，等你毕业了，完全不需要去银行进行麻烦的申请，只需要上传毕业证信息，就能有额度。对于这个，我其实是用不到的，因为毕业生就算有额度，估计也没多少，但是有一点是吸引我的，因为他们说在校期间这张卡可以当储蓄卡使用，没有额度，通过其他银行或者本行的借记卡向卡内转账，就可以将卡内余额当成信用卡使用。
+为什么这点吸引我呢，因为在网上平时确实需要用到信用卡支付，多数是在海外平台支付，比如一些国外域名注册商，亦或是国外的产品，像我之前用的AI绘画Midjourney，开通会员就需要用到信用卡，所以我寻思反正不花钱，那就办一张吧。
+当时我们宿舍4个人，就我一个傻傻的办理了，舍友还嘲笑我花时间给别人送了提成。但是吧，也许只有我自己知道我的想法，而且卡面当时好几种选择，我选了皮卡丘的，还是挺好看的。办理完成之后，大概过了两周，我就去学校门口拿到了这张卡，因为是EMS专递，所以需要本人带学生证和身份证到门口签收，拿到卡之后，觉得卡 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E9%9A%8F%E8%AE%B0/">随记</a></div><div class="post_cover left"><a href="/2023/06/21/26/" title="正式启用第一个com域名"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/26/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="正式启用第一个com域名"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/21/26/" title="正式启用第一个com域名">正式启用第一个com域名</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-21T11:23:00.000Z" title="发表于 2023-06-21 19:23:00">2023-06-21</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%9F%9F%E5%90%8D/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>域名</span></a></span></div><div class="content">如果你是友链站点，请修改一下我的友链信息，详见→友人帐
+正式启用新域名blog.zceee.com。前一段时间在文章中有提到，我打算换个域名，换成主流的com后缀。在19号，域名备案通过了，今天就把博客域名完全换好了。换域名真是一件麻烦事。先把域名证书申请下来，而且还是需要多域名的，因为需要在百度搜索资源平台提交网站改版，如果不是多域名证书的话，就没办法把新域名和旧域名绑定在同一个站点下面，还需要开启ssl。
+然后就是网站内域名修改，但是这个问题不大，可以用插件把旧域名替换一下。域名更换之后，我还好奇为啥网站图片都不能访问了，后来才发现，是因为我的图片加了防盗链，于是把新域名允许访问，这样差不多就改好了。
+因为提交了百度资源平台的网站改版，目前原域名都是301到新地址，等改版之后，应该就会彻底抛弃原来的zc.wiki了。因为wiki涨价了，之前续费只要60多，现在要150了，com的价格还不到100，并且com还是主流后缀。
+最后，如果你是友链站点的站长，希望你可以抽空把我的友链信息改一下，将zc.wiki改成zceee.com即可。
+</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E9%9A%8F%E8%AE%B0/">随记</a></div><div class="post_cover left"><a href="/2023/06/20/25/" title="个站商店？不忘初心，方得始终？"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/25/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个站商店？不忘初心，方得始终？"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/20/25/" title="个站商店？不忘初心，方得始终？">个站商店？不忘初心，方得始终？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-20T09:54:00.000Z" title="发表于 2023-06-20 17:54:00">2023-06-20</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%B8%AA%E7%AB%99%E5%95%86%E5%BA%97/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>个站商店</span></a></span></div><div class="content">
+本文只是个人对于接收的邮件看法，不针对个站商店平台中任何博客，希望各位大佬理解
+
+个站商店，一个精致的，带社交元素的个人网站发布平台，博客收录网站。
+今天下午收到了一封来自个站商店的单独邮件，一开始我很好奇，因为我了解个站商店没多长时间，就是发布了一下自己的博客，今天突然收到一封邮件，于是我打开看了一下。
+呃，内容非原创？多是技术类或者转载类？比较少人看？你要不听听你在说什么？
+首先，【内容非原创】，我的博客，除了在特殊节日发的文章，目前有两篇，一篇是4月1日关于飞行员王伟和81192的事迹，一篇是5月12日缅怀汶川大地震，这两篇确实是转载，其余的哪一篇非原创？哪一篇是转载？你作为一个平台站长，有没有去看相关内容？上来就是【内容非原创】，有点可笑了吧！你可能看到标题就觉得是转载的，但是看看文章内容，看看图片，就会知道都是我自己的事情，何来转载一说？
+分类里面的60秒读懂世界，我在之前的博客里面有说，是我自己每天看的新闻，并且这个分类不会出现在博客首页、sitemap以及rss中，我个人觉得对博文阅读没有任何影响。
+其次，【多是技术类】，作为一个独立博客站长，不能写技术文章？难道我需要 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></div><div class="post_cover left"><a href="/2023/06/14/24/" title="使用江苏省企业全链通综合服务平台"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/24/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用江苏省企业全链通综合服务平台"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/14/24/" title="使用江苏省企业全链通综合服务平台">使用江苏省企业全链通综合服务平台</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-14T13:00:00.000Z" title="发表于 2023-06-14 21:00:00">2023-06-14</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%85%A8%E9%93%BE%E9%80%9A/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>全链通</span></a></span></div><div class="content">之前想着注册一个个体户，毕竟个人网站在使用中还是有点限制的，以及一些平台只开放给企业认证的用户，所以想看看能不能搞个个体户的。
+经过了解在江苏省政务服务平台中有一个【江苏省企业全链通综合服务平台】，可以在线上提交企业注册材料，于是去全链通平台看了一下，也大概了解了一点。
+在注册企业之前需要有自己的字号，没有字号的话需要在线申报，申报字号之后，就可以登记企业信息了。在登记企业信息的时候，可以选择网店或者非网店，网店指的是经营者在对应的电子商务平台中有自己的网络经营场所或者网店店铺，比如在京东、拼多多、淘宝、微店上面开店的，但也有的是自己的网站，填写的经营地址就是店铺网址或者个人域名。
+如果是非网点，就需要提供房产证或者租房合同之类的证明，我一般也是网站服务，所以登记的是网点，用的网站域名也是自己的。但是在今天上午，市行政审批局的同志联系我，说需要填写的类似京东、淘宝等店铺的地址，这里我就不清楚了，因为我看有的网店执照填的就是自己的域名，但是我们市行政审批局要求的是这种网点地址，所以后来我也是放弃了这个。
+</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E6%B6%A8%E7%9F%A5%E8%AF%86/">涨知识</a></div><div class="post_cover left"><a href="/2023/06/10/23/" title="我的博客小程序上线了"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/23/3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的博客小程序上线了"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/10/23/" title="我的博客小程序上线了">我的博客小程序上线了</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-10T04:41:00.000Z" title="发表于 2023-06-10 12:41:00">2023-06-10</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>小程序</span></a></span></div><div class="content">前言我发现，在运营个人博客的时候，可能就是前期高产，后期年更，最近一个月感觉发了很多文章，之前搞博客的时候都没这么多精力。算了，估计以后也不会像现在更新这么频繁了，但是我的博客有每日60秒的新闻，它不会影响正常访问，如果你觉得有意思的话，可以进入分类页面去阅读。
+小程序回到话题来，就是我下午搞了博客的微信小程序，可以扫码看看至于为什么会搞这个微信小程序，其实你如果访问了就会发现，它并不是同步博客的，也就是说它并不是这个博客的小程序，而是一个小程序，用来发博客文章的，可能也会发点其他内容。关于小程序的由来，听我慢慢给你道来。
+前因后果这个硬盘是我之前在京东买的，256G的存储，当时买来为了存一些代码文件之类的，但是后来感觉直接存在电脑上更方便，这个也就放一边吃灰了。买了大概有1年了吧，今天给他翻出来看了看，还能用，想看看之前存了什么文件的。
+打开之后发现，都是22年的文件，但是其中有两个关于小程序的文件，一个是投票小程序，应该是之前在学校的时候，闲着没事不知道在哪下载的，还有一个叫社团小程序，还是个压缩包，我当时在想，这个是干啥的，想了一段时间，想起来当时在学校社团的时候，想搞个社团专属 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E6%B6%A8%E7%9F%A5%E8%AF%86/">涨知识</a></div><div class="post_cover left"><a href="/2023/06/08/22/" title="你“ga”了吗？"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/22/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你“ga”了吗？"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/08/22/" title="你“ga”了吗？">你“ga”了吗？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-08T09:55:00.000Z" title="发表于 2023-06-08 17:55:00">2023-06-08</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E5%9F%9F%E5%90%8D/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>域名</span></a><a class="article-meta__tags" href="/tags/%E5%8A%A0%E8%93%AC/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>加蓬</span></a></span></div><div class="content">今天你“ga”了吗？这个ga不是嘎，而是加蓬共和国国家顶级域名.ga
+看过我之前文章的朋友应该了解，我有的时候喜欢捣鼓国别域名，为什么喜欢看一些国别域名呢？虽然我也觉得com、cn这些域名知名度高，有价值，但是由于注册量太大，导致可供选择的前缀就很少，比如我想注册一个zc前缀的域名，如果选择com、cn这些，那必须加上其他字母或者数字，而且长度一般在5位以上。所以我觉得，如果没有备案的需求，不管是搭建网站还是使用邮箱之类的，国别域名都适合玩一玩。
+今天讨论的就是最近一段时间，在非主流域名中比较有点热度的ga域名，也就是加蓬共和国的顶级域。.ga域名和.ml、.cf这些域名类似，都是来自非洲一些小国的国家顶级域名，因为用户注册量少又无法正常运营，所以都是交给Freenom公司来运营，并且免费开放给用户选择使用。
+但是，就在近期，.ga域名被加蓬国家数字基础设施和频率管理局接管，下面是关于该域名的通告：
+
+免费域名 .ga 被加蓬国家数字基础设施和频率管理局接管，大部分域名被回收。加蓬当局已经接管了此前在 Freenom 等平台注册的 .ga 域名的管理和运营。
+
+加蓬共和国国家数字基础设 ...</div></div></div><div class="recent-post-item"><div class="article-meta__categories__box"><a class="article-meta__categories" href="/categories/%E9%9A%8F%E8%AE%B0/">随记</a></div><div class="post_cover left"><a href="/2023/06/05/21/" title="花钱备案？记录一次备案历程"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/21/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="花钱备案？记录一次备案历程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/05/21/" title="花钱备案？记录一次备案历程">花钱备案？记录一次备案历程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-05T10:54:00.000Z" title="发表于 2023-06-05 18:54:00">2023-06-05</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>腾讯云</span></a><a class="article-meta__tags" href="/tags/%E5%9F%9F%E5%90%8D/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>域名</span></a><a class="article-meta__tags" href="/tags/%E5%A4%87%E6%A1%88/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>备案</span></a></span></div><div class="content">前两天说打算放弃现在的wiki域名，启用com域名。所以我把域名提交了腾讯云备案，万万没想到，这次备案让我头大。首先看一下我这次备案提交的材料，跟阿里云相比，阿里云的江苏个人备案，只需要责任告知书和真实性承诺书，还有一个负责人承诺视频。腾讯云比阿里云多了一个第四个承诺视频。阿里云的负责人承诺视频就是对着手机读屏幕上面的文字就行，而腾讯云需要对着摄像头，手持真实性承诺书然后读屏幕上面文字。
+
+承诺视频④与网站负责人承诺视频⑦是两份不同的视频，④需要手持身份证拍摄，⑦需要手持真实性承诺书拍摄，阿里云不需要承诺视频④
+
+而且腾讯云现在有的需要网站建设方案书，我看了腾讯云相关文档，一般在备案数量超过4个的时候，需要提交网站建设方案书，虽然我备案号已经-4了，但是我-2是注销的，跟客服说明了这个情况，但是客服说跟这个没关系，有的人第一次备案就需要这个了，我是第四次需要的。反正个人感觉，江苏个人备案，阿里云比腾讯云方便多了。离谱的是，腾讯云要求提供网站建设方案书，并且只能以图片形式上传【我不理解一个方案书为什么不是Word或者PDF，而是图片上传】，也就是说，如果超过两张图片，需要合并一张图，但是 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><div class="pagination_tips_next">下页</div><i style="font-weight: inherit; font-size: 1rem;" class="anzhiyufont anzhiyu-icon-chevron-right fa-fw"></i></a><div class="toPageGroup"><input id="toPageText" oninput="value=value.replace(/[^0-9]/g,'')" maxlength="3" onkeyup="this.value=this.value.replace(/[^u4e00-u9fa5w]/g,'')" aria-label="toPage"><a id="toPageButton" onclick="anzhiyu.toPage()"><i class="anzhiyufont anzhiyu-icon-angles-right" style="font-weight: inherit; font-size: 1rem;"></i></a></div></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author-info-top"> <div class="card-info-avatar"></div></div><div class="author-info__sayhi" id="author-info__sayhi"></div><h1 class="author-info__name">终成</h1><div class="author-info__description"></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/about/&quot;)"><span class="banner-button-text">了解更多</span><i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem"></i></a></div></div><div class="sticky_layout"><div class="card-widget"><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/512/" style="font-size: 1.05rem;">512<sup>1</sup></a><a href="/tags/81192/" style="font-size: 1.05rem;">81192<sup>1</sup></a><a href="/tags/AIGC/" style="font-size: 1.05rem;">AIGC<sup>2</sup></a><a href="/tags/AI%E7%BB%98%E7%94%BB/" style="font-size: 1.05rem;">AI绘画<sup>2</sup></a><a href="/tags/ChatGPT/" style="font-size: 1.05rem;">ChatGPT<sup>1</sup></a><a href="/tags/Gitee/" style="font-size: 1.05rem;">Gitee<sup>1</sup></a><a href="/tags/GoDaddy/" style="font-size: 1.05rem;">GoDaddy<sup>1</sup></a><a href="/tags/Google/" style="font-size: 1.05rem;">Google<sup>1</sup></a><a href="/tags/Hexo/" style="font-size: 1.05rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Hexo<sup>1</sup></a><a href="/tags/Midjourney/" style="font-size: 1.05rem;">Midjourney<sup>1</sup></a><a href="/tags/PayPal/" style="font-size: 1.05rem;">PayPal<sup>1</sup></a><a href="/tags/Typecho/" style="font-size: 1.05rem;">Typecho<sup>1</sup></a><a href="/tags/ssl%E8%AF%81%E4%B9%A6/" style="font-size: 1.05rem;">ssl证书<sup>1</sup></a><a href="/tags/stable-diffusion/" style="font-size: 1.05rem;">stable-diffusion<sup>1</sup></a><a href="/tags/web3/" style="font-size: 1.05rem;">web3<sup>1</sup></a><a href="/tags/%E4%B8%87%E4%BA%8B%E8%BE%BE/" style="font-size: 1.05rem;">万事达<sup>1</sup></a><a href="/tags/%E4%B8%AA%E7%AB%99%E5%95%86%E5%BA%97/" style="font-size: 1.05rem;">个站商店<sup>1</sup></a><a href="/tags/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5/" style="font-size: 1.05rem;">中国广电<sup>2</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 1.05rem;">主题<sup>1</sup></a><a href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8/" style="font-size: 1.05rem;">云存储<sup>1</sup></a><a href="/tags/%E4%BF%A1%E7%94%A8%E5%8D%A1/" style="font-size: 1.05rem;">信用卡<sup>2</sup></a><a href="/tags/%E5%85%A8%E9%93%BE%E9%80%9A/" style="font-size: 1.05rem;">全链通<sup>1</sup></a><a href="/tags/%E5%85%B3%E4%BA%8E%E6%88%91/" style="font-size: 1.05rem;">关于我<sup>1</sup></a><a href="/tags/%E5%8A%A0%E8%93%AC/" style="font-size: 1.05rem;">加蓬<sup>1</sup></a><a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 1.05rem;">域名<sup>11</sup></a><a href="/tags/%E5%9F%9F%E5%90%8D%E5%88%86%E5%8F%91/" style="font-size: 1.05rem;">域名分发<sup>3</sup></a><a href="/tags/%E5%A4%87%E6%A1%88/" style="font-size: 1.05rem;">备案<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 1.05rem;">小程序<sup>1</sup></a><a href="/tags/%E5%BE%AE%E4%BA%91/" style="font-size: 1.05rem;">微云<sup>1</sup></a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.05rem;">数据库<sup>1</sup></a><a href="/tags/%E6%B1%B6%E5%B7%9D%E5%A4%A7%E5%9C%B0%E9%9C%87/" style="font-size: 1.05rem;">汶川大地震<sup>1</sup></a><a href="/tags/%E7%8E%8B%E4%BC%9F/" style="font-size: 1.05rem;">王伟<sup>1</sup></a><a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91CDN/" style="font-size: 1.05rem;">百度云CDN<sup>1</sup></a><a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/" style="font-size: 1.05rem;">腾讯云<sup>2</sup></a></div></div><hr/><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">8</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">13</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li></ul></div><hr/><div class="card-webinfo"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">29</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-03-31T16:00:00.000Z"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-09T23:56:37.075Z"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="站长太难DNS" target="_blank">站长太难DNS</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" target="_blank" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" target="_blank" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" target="_blank" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><div class="copyright">&copy;2020 - 2023 By 终成</div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" style="margin-inline:5px" data-title="苏ICP备2023004020号-5" title="苏ICP备2023004020号-5"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/icp.png" alt="苏ICP备2023004020号-5"/></a></p></div></footer></div></div></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/img/t/hexo/logo.png"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+let loadingPercentageTimer = setInterval(function() {
+  var progressBar = document.querySelector(".pace-progress");
+  if (!progressBar) return
+  var currentValue = progressBar.getAttribute("data-progress-text");
+  if (currentValue !== loadingPercentage.textContent) {
+    loadingPercentage.textContent = currentValue;
+    if (currentValue === "100%") {
+      clearInterval(loadingPercentageTimer);
+    }
+  }
+}, 100);
+const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+    Pace.restart()
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/progress_bar/progress_bar.css"/><script async="async" src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div id="sidebar"><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/logo.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">29</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button id="center-console" type="button" title="中控台"><i class="anzhiyufont anzhiyu-icon-fish"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><div id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()">播放音乐</div><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="console"><div class="close-btn" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-xmark" style="font-size: 35px;"></i></div><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/img/t/hexo/326.jpg" target="_blank"><img class="post-qr-code-img" alt="wechat" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/326.jpg"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/t/hexo/2251.jpg" target="_blank"><img class="post-qr-code-img" alt="alipay" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/t/hexo/2251.jpg"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> <span>最新评论</span></span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/512/" style="font-size: 1.05rem;">512<sup>1</sup></a><a href="/tags/81192/" style="font-size: 1.05rem;">81192<sup>1</sup></a><a href="/tags/AIGC/" style="font-size: 1.05rem;">AIGC<sup>2</sup></a><a href="/tags/AI%E7%BB%98%E7%94%BB/" style="font-size: 1.05rem;">AI绘画<sup>2</sup></a><a href="/tags/ChatGPT/" style="font-size: 1.05rem;">ChatGPT<sup>1</sup></a><a href="/tags/Gitee/" style="font-size: 1.05rem;">Gitee<sup>1</sup></a><a href="/tags/GoDaddy/" style="font-size: 1.05rem;">GoDaddy<sup>1</sup></a><a href="/tags/Google/" style="font-size: 1.05rem;">Google<sup>1</sup></a><a href="/tags/Hexo/" style="font-size: 1.05rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Hexo<sup>1</sup></a><a href="/tags/Midjourney/" style="font-size: 1.05rem;">Midjourney<sup>1</sup></a><a href="/tags/PayPal/" style="font-size: 1.05rem;">PayPal<sup>1</sup></a><a href="/tags/Typecho/" style="font-size: 1.05rem;">Typecho<sup>1</sup></a><a href="/tags/ssl%E8%AF%81%E4%B9%A6/" style="font-size: 1.05rem;">ssl证书<sup>1</sup></a><a href="/tags/stable-diffusion/" style="font-size: 1.05rem;">stable-diffusion<sup>1</sup></a><a href="/tags/web3/" style="font-size: 1.05rem;">web3<sup>1</sup></a><a href="/tags/%E4%B8%87%E4%BA%8B%E8%BE%BE/" style="font-size: 1.05rem;">万事达<sup>1</sup></a><a href="/tags/%E4%B8%AA%E7%AB%99%E5%95%86%E5%BA%97/" style="font-size: 1.05rem;">个站商店<sup>1</sup></a><a href="/tags/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5/" style="font-size: 1.05rem;">中国广电<sup>2</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 1.05rem;">主题<sup>1</sup></a><a href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8/" style="font-size: 1.05rem;">云存储<sup>1</sup></a><a href="/tags/%E4%BF%A1%E7%94%A8%E5%8D%A1/" style="font-size: 1.05rem;">信用卡<sup>2</sup></a><a href="/tags/%E5%85%A8%E9%93%BE%E9%80%9A/" style="font-size: 1.05rem;">全链通<sup>1</sup></a><a href="/tags/%E5%85%B3%E4%BA%8E%E6%88%91/" style="font-size: 1.05rem;">关于我<sup>1</sup></a><a href="/tags/%E5%8A%A0%E8%93%AC/" style="font-size: 1.05rem;">加蓬<sup>1</sup></a><a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 1.05rem;">域名<sup>11</sup></a><a href="/tags/%E5%9F%9F%E5%90%8D%E5%88%86%E5%8F%91/" style="font-size: 1.05rem;">域名分发<sup>3</sup></a><a href="/tags/%E5%A4%87%E6%A1%88/" style="font-size: 1.05rem;">备案<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 1.05rem;">小程序<sup>1</sup></a><a href="/tags/%E5%BE%AE%E4%BA%91/" style="font-size: 1.05rem;">微云<sup>1</sup></a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.05rem;">数据库<sup>1</sup></a><a href="/tags/%E6%B1%B6%E5%B7%9D%E5%A4%A7%E5%9C%B0%E9%9C%87/" style="font-size: 1.05rem;">汶川大地震<sup>1</sup></a><a href="/tags/%E7%8E%8B%E4%BC%9F/" style="font-size: 1.05rem;">王伟<sup>1</sup></a><a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91CDN/" style="font-size: 1.05rem;">百度云CDN<sup>1</sup></a><a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/" style="font-size: 1.05rem;">腾讯云<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history" onclick="anzhiyu.hideConsole()"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">8</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">13</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="anzhiyu.switchDarkMode()" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.2.1/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.2.1/source/js/main.js"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@5.1.1/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/vanilla-lazyload@17.3.1/dist/lazyload.iife.min.js"></script><script src="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 1.2.1",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 终成 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="anzhiyu"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'zcwiki-6ge2el38eaf650f7',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://npm.elemecdn.com/twikoo@1.6.16/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick}</span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "visitor@anzhiy.cn";</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script>// 初始化函数
+let rm = {};
+
+//禁止图片与超链接拖拽
+let aElements = document.getElementsByTagName("a");
+for (let i = 0; i < aElements.length; i++) {
+  aElements[i].setAttribute("draggable", "false");
+  let imgElements = aElements[i].getElementsByTagName("img");
+  for (let j = 0; j < imgElements.length; j++) {
+    imgElements[j].setAttribute("draggable", "false");
+  }
+}
+
+// 显示菜单
+rm.showRightMenu = function (isTrue, x = 0, y = 0) {
+  console.info(x, y)
+  let rightMenu = document.getElementById("rightMenu");
+  rightMenu.style.top = x + "px";
+  rightMenu.style.left = y + "px";
+  if (isTrue) {
+    rightMenu.style.display = "block";
+    stopMaskScroll();
+  } else {
+    rightMenu.style.display = "none";
+  }
+};
+
+// 隐藏菜单
+rm.hideRightMenu = function () {
+  rm.showRightMenu(false);
+  let rightMenuMask = document.querySelector("#rightmenu-mask");
+  rightMenuMask.style.display = "none";
+};
+
+// 尺寸
+let rmWidth = document.getElementById("rightMenu").offsetWidth;
+let rmHeight = document.getElementById("rightMenu").offsetHeight;
+
+// 重新定义尺寸
+rm.reloadrmSize = function () {
+  rightMenu.style.visibility = "hidden";
+  rightMenu.style.display = "block";
+  // 获取宽度和高度
+  rmWidth = document.getElementById("rightMenu").offsetWidth;
+  rmHeight = document.getElementById("rightMenu").offsetHeight;
+  rightMenu.style.visibility = "visible";
+};
+
+// 获取点击的href
+let domhref = "";
+let domImgSrc = "";
+let globalEvent = null;
+
+var oncontextmenuFunction = function (event) {
+  if (document.body.clientWidth > 768) {
+    let pageX = event.clientX + 10; //加10是为了防止显示时鼠标遮在菜单上
+    let pageY = event.clientY;
+
+    //其他额外菜单
+    const $rightMenuOther = document.querySelector(".rightMenuOther");
+    const $rightMenuPlugin = document.querySelector(".rightMenuPlugin");
+    const $rightMenuCopyText = document.querySelector("#menu-copytext");
+    const $rightMenuPasteText = document.querySelector("#menu-pastetext");
+    const $rightMenuCommentText = document.querySelector("#menu-commenttext");
+    const $rightMenuNewWindow = document.querySelector("#menu-newwindow");
+    const $rightMenuNewWindowImg = document.querySelector("#menu-newwindowimg");
+    const $rightMenuCopyLink = document.querySelector("#menu-copylink");
+    const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
+    const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
+    const $rightMenuSearch = document.querySelector("#menu-search");
+    const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
+    const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
+    const $rightMenuMusicBack = document.querySelector("#menu-music-back");
+    const $rightMenuMusicForward = document.querySelector("#menu-music-forward");
+    const $rightMenuMusicPlaylist = document.querySelector("#menu-music-playlist");
+    const $rightMenuMusicCopyMusicName = document.querySelector("#menu-music-copyMusicName");
+
+    let href = event.target.href;
+    let imgsrc = event.target.currentSrc;
+
+    // 判断模式 扩展模式为有事件
+    let pluginMode = false;
+    $rightMenuOther.style.display = "block";
+    globalEvent = event;
+
+    // 检查是否需要复制 是否有选中文本
+    if (selectTextNow && window.getSelection()) {
+      pluginMode = true;
+      $rightMenuCopyText.style.display = "block";
+      $rightMenuCommentText.style.display = "block";
+      $rightMenuSearch.style.display = "block";
+      $rightMenuSearchBaidu.style.display = "block";
+    } else {
+      $rightMenuCopyText.style.display = "none";
+      $rightMenuCommentText.style.display = "none";
+      $rightMenuSearchBaidu.style.display = "none";
+      $rightMenuSearch.style.display = "none";
+    }
+
+    //检查是否右键点击了链接a标签
+    if (href) {
+      pluginMode = true;
+      $rightMenuNewWindow.style.display = "block";
+      $rightMenuCopyLink.style.display = "block";
+      domhref = href;
+    } else {
+      $rightMenuNewWindow.style.display = "none";
+      $rightMenuCopyLink.style.display = "none";
+    }
+
+    //检查是否需要复制图片
+    if (imgsrc) {
+      pluginMode = true;
+      $rightMenuCopyImg.style.display = "block";
+      $rightMenuDownloadImg.style.display = "block";
+      $rightMenuNewWindowImg.style.display = "block";
+      document.getElementById("rightMenu").style.width="12rem"
+      domImgSrc = imgsrc;
+    } else {
+      $rightMenuCopyImg.style.display = "none";
+      $rightMenuDownloadImg.style.display = "none";
+      $rightMenuNewWindowImg.style.display = "none";
+    }
+
+    // 判断是否为输入框
+    if (event.target.tagName.toLowerCase() === "input" || event.target.tagName.toLowerCase() === "textarea") {
+      pluginMode = true;
+      $rightMenuPasteText.style.display = "block";
+    } else {
+      $rightMenuPasteText.style.display = "none";
+    }
+    const navMusicEl = document.querySelector("#nav-music");
+    //判断是否是音乐
+    if (navMusicEl && navMusicEl.contains(event.target)) {
+      pluginMode = true;
+      $rightMenuMusicToggle.style.display = "block";
+      $rightMenuMusicBack.style.display = "block";
+      $rightMenuMusicForward.style.display = "block";
+      $rightMenuMusicPlaylist.style.display = "block";
+      $rightMenuMusicCopyMusicName.style.display = "block";
+    } else {
+      $rightMenuMusicToggle.style.display = "none";
+      $rightMenuMusicBack.style.display = "none";
+      $rightMenuMusicForward.style.display = "none";
+      $rightMenuMusicPlaylist.style.display = "none";
+      $rightMenuMusicCopyMusicName.style.display = "none";
+    }
+
+    // 如果不是扩展模式则隐藏扩展模块
+    if (pluginMode) {
+      $rightMenuOther.style.display = "none";
+      $rightMenuPlugin.style.display = "block";
+    } else {
+      $rightMenuPlugin.style.display = "none";
+    }
+
+    rm.reloadrmSize();
+
+    // 鼠标默认显示在鼠标右下方，当鼠标靠右或靠下时，将菜单显示在鼠标左方\上方
+    if (pageX + rmWidth > window.innerWidth) {
+      pageX -= rmWidth + 10;
+    }
+    if (pageY + rmHeight > window.innerHeight) {
+      pageY -= pageY + rmHeight - window.innerHeight;
+    }
+
+    rm.showRightMenu(true, pageY, pageX);
+    document.getElementById("rightmenu-mask").style.display = "flex";
+    return false;
+  }
+};
+
+// 监听右键初始化
+window.oncontextmenu = oncontextmenuFunction
+
+// 下载图片状态
+rm.downloadimging = false;
+
+// 复制图片到剪贴板
+rm.writeClipImg = function (imgsrc) {
+  console.log("按下复制");
+  rm.hideRightMenu();
+  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  if (rm.downloadimging == false) {
+    rm.downloadimging = true;
+    setTimeout(function () {
+      copyImage(imgsrc);
+      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      rm.downloadimging = false;
+    }, "10000");
+  }
+};
+
+function imageToBlob(imageURL) {
+  const img = new Image();
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob(
+        blob => {
+          // here the image is a blob
+          resolve(blob);
+        },
+        "image/png",
+        0.75
+      );
+    };
+  });
+}
+
+async function copyImage(imageURL) {
+  const blob = await imageToBlob(imageURL);
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
+}
+
+rm.copyUrl = function (id) {
+  const input = document.createElement("input"); // Create a new <input> element
+  input.id = "copyVal"; // Set the id of the new element to "copyVal"
+  document.body.appendChild(input); // Append the new element to the end of the <body> element
+  
+  const text = id;
+  input.value = text;
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("copy");
+  
+  input.remove(); // Remove the <input> element from the DOM
+};
+
+function stopMaskScroll() {
+  if (document.getElementById("rightmenu-mask")) {
+    let xscroll = document.getElementById("rightmenu-mask");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      false
+    );
+  }
+  if (document.getElementById("rightMenu")) {
+    let xscroll = document.getElementById("rightMenu");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      false
+    );
+  }
+}
+
+rm.rightmenuCopyText = function (txt) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt);
+  }
+  rm.hideRightMenu();
+};
+
+rm.copyPageUrl = function () {
+  var url = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+rm.sharePage = function () {
+  var content = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+// 复制当前选中文本
+var selectTextNow = "";
+document.onmouseup = document.ondblclick = selceText;
+
+function selceText() {
+  var txt;
+  if (document.selection) {
+    txt = document.selection.createRange().text;
+  } else {
+    txt = window.getSelection().toString();
+  }
+  selectTextNow = txt !== "" ? txt : "";
+}
+
+// 读取剪切板
+rm.readClipboard = function () {
+  if (navigator.clipboard) {
+    navigator.clipboard.readText().then(clipText => rm.insertAtCaret(globalEvent.target, clipText));
+  }
+};
+
+// 粘贴文本到焦点
+rm.insertAtCaret = function (elemt, value) {
+  const startPos = elemt.selectionStart,
+    endPos = elemt.selectionEnd;
+  if (document.selection) {
+    elemt.focus();
+    var sel = document.selection.createRange();
+    sel.text = value;
+    elemt.focus();
+  } else {
+    if (startPos || startPos == "0") {
+      var scrollTop = elemt.scrollTop;
+      elemt.value = elemt.value.substring(0, startPos) + value + elemt.value.substring(endPos, elemt.value.length);
+      elemt.focus();
+      elemt.selectionStart = startPos + value.length;
+      elemt.selectionEnd = startPos + value.length;
+      elemt.scrollTop = scrollTop;
+    } else {
+      elemt.value += value;
+      elemt.focus();
+    }
+  }
+};
+
+//粘贴文本
+rm.pasteText = function () {
+  const result = rm.readClipboard() || "";
+  rm.hideRightMenu();
+};
+
+//引用到评论
+rm.rightMenuCommentText = function (txt) {
+  rm.hideRightMenu();
+  const postCommentDom = document.getElementById("post-comment");
+  var domTop = postCommentDom.offsetTop;
+  window.scrollTo(0, domTop - 80);
+  if (txt == "undefined" || txt == "null") txt = "好棒！";
+  function setText() {
+    setTimeout(() => {
+      var input = document.getElementsByClassName("el-textarea__inner")[0];
+      if (!input) setText();
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("input", true, true);
+      let inputValue = replaceAll(txt, "\n", "\n> ");
+      input.value = "> " + inputValue + "\n\n";
+      input.dispatchEvent(evt);
+      input.focus();
+      input.setSelectionRange(-1, -1);
+      if (document.getElementById("comment-tips")) {
+        document.getElementById("comment-tips").classList.add("show");
+      }
+    }, 100);
+  }
+  setText();
+};
+
+//替换所有内容
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+// 百度搜索
+rm.searchBaidu = function () {
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  setTimeout(function () {
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
+  }, "2000");
+  rm.hideRightMenu();
+};
+
+//分享链接
+rm.copyLink = function () {
+  rm.rightmenuCopyText(domhref);
+  anzhiyu.snackbarShow("已复制链接地址");
+};
+
+function addRightMenuClickEvent() {
+  // 添加点击事件
+  document.getElementById("menu-backward").addEventListener("click", function () {
+  window.history.back();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-forward").addEventListener("click", function () {
+    window.history.forward();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-refresh").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  document.getElementById("menu-top").addEventListener("click", function () {
+    anzhiyu.scrollToDest(0, 500);
+    rm.hideRightMenu();
+  });
+
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", rm.hideRightMenu);
+  });
+
+  document.getElementById("menu-darkmode").addEventListener("click", anzhiyu.switchDarkMode);
+
+  document.getElementById("menu-home") && document.getElementById("menu-home").addEventListener("click", function () {
+    window.location.href = window.location.origin;
+  });
+
+  document.getElementById("menu-randomPost").addEventListener("click", function () {
+    toRandomPost();
+  });
+
+  document.getElementById("menu-commentBarrage").addEventListener("click", anzhiyu.switchCommentBarrage);
+
+  document.getElementById("rightmenu-mask").addEventListener("click", rm.hideRightMenu);
+
+  document.getElementById("rightmenu-mask").addEventListener("contextmenu", function (event) {
+    rm.hideRightMenu();
+    event.preventDefault(); // Prevent the default context menu from appearing
+  });
+
+  document.getElementById("menu-copy").addEventListener("click", rm.copyPageUrl);
+
+  document.getElementById("menu-pastetext").addEventListener("click", rm.pasteText);
+
+  document.getElementById("menu-copytext").addEventListener("click", function () {
+    rm.rightmenuCopyText(selectTextNow);
+    anzhiyu.snackbarShow("复制成功，复制和转载请标注本文地址");
+  });
+
+  document.getElementById("menu-commenttext").addEventListener("click", function () {
+    rm.rightMenuCommentText(selectTextNow);
+  });
+
+  document.getElementById("menu-newwindow").addEventListener("click", function () {
+    window.open(domhref);
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copylink").addEventListener("click", rm.copyLink);
+
+  document.getElementById("menu-downloadimg").addEventListener("click", function () {
+    anzhiyu.downloadImage(domImgSrc, "anzhiyu");
+  });
+
+  document.getElementById("menu-newwindowimg").addEventListener("click", function () {
+    window.open(domImgSrc);
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copyimg").addEventListener("click", function () {
+    rm.writeClipImg(domImgSrc);
+  });
+
+  document.getElementById("menu-searchBaidu").addEventListener("click", rm.searchBaidu);
+
+  //音乐
+  document.getElementById("menu-music-toggle").addEventListener("click", anzhiyu.musicToggle);
+
+  document.getElementById("menu-music-back").addEventListener("click", anzhiyu.musicSkipBack);
+
+  document.getElementById("menu-music-forward").addEventListener("click", anzhiyu.musicSkipForward);
+
+  document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
+    rm.rightmenuCopyText(anzhiyu.musicGetName());
+    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+  });
+
+}
+
+addRightMenuClickEvent();</script><script data-pjax>var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+var pageHeaderEl = document.getElementById("page-header");
+var navMusicEl = document.getElementById("nav-music");
+var consoleEl = document.getElementById("console");
+// 已随机的歌曲
+var selectRandomSong = [];
+// 音乐默认声音大小
+var musicVolume = 0.8;
+// 是否切换了周杰伦音乐列表
+var changeMusicListFlag = false;
+// 当前默认播放列表
+var defaultPlayMusicList = [];
+
+document.getElementById("page-name").innerText = document.title.split(" | 安知鱼")[0];
+anzhiyu.initIndexEssay();
+anzhiyu.changeTimeInEssay();
+anzhiyu.removeBodyPaceClass();
+anzhiyu.qrcodeCreate();
+anzhiyu.changeTimeInAlbumDetail();
+anzhiyu.reflashEssayWaterFall();
+anzhiyu.sayhi();
+anzhiyu.stopImgRightDrag();
+anzhiyu.addNavBackgroundInit();
+anzhiyu.setValueToBodyType();
+anzhiyu.catalogActive();
+anzhiyu.tagsPageActive();
+anzhiyu.categoriesBarActive();
+anzhiyu.topCategoriesBarScroll();
+
+anzhiyu.getCustomPlayList();
+anzhiyu.addEventListenerConsoleMusicList(false);
+setTimeout(() => {
+  if (typeof addFriendLinksInFooter === "function") {
+    addFriendLinksInFooter();
+  }
+}, 200)</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.0/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://npm.elemecdn.com/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div></body></html>
